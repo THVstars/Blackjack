@@ -32,6 +32,15 @@ BLACKJACK CONSOLE GAME PSEUDO CODE:
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        System.out.println("Welcome to Blackjack!");
+        Deck deck = new Deck();
+        deck.shuffle();
+        Player taehyung = new Player();
+        System.out.println("You just drew a: ");
+        taehyung.drawCard(deck);
+        System.out.println("");
+        Dealer dealer = new Dealer();
+        System.out.println("Dealer just drew a: ");
+        dealer.drawCard(deck);
     }
 }
