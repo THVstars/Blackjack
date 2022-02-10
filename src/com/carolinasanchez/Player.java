@@ -3,7 +3,7 @@ package com.carolinasanchez;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Player implements Actor {
+public class Player implements Actor { // interface = "implements", abstract = "extends"
     private List<Card> hand;
 
     public Player() {
@@ -16,6 +16,12 @@ public class Player implements Actor {
         System.out.println(deck.getCards().get(0));
         deck.getCards().remove(0);
     }
-    // interface = "implements"
-    // abstract = "extends"
+
+    public List<Card> getHand() {
+        return hand;
+    }
+
+    public void setHand(List<Card> hand) {
+        this.hand = hand;
+    }
 }

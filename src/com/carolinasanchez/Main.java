@@ -38,9 +38,11 @@ public class Main {
         Player taehyung = new Player();
         System.out.println("You just drew a: ");
         taehyung.drawCard(deck);
+        System.out.println(taehyung.getHand());
         System.out.println("");
         Dealer dealer = new Dealer();
         System.out.println("Dealer just drew a: ");
         dealer.drawCard(deck);
-    }
+        System.out.println(dealer.getHand());
+    } // ADDED BY ME: Added the getters and setters for the dealer and player. Had the dealer draw a card as well. Printed the dealer's and player's hands to the console.
 }

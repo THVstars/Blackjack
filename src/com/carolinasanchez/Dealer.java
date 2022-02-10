@@ -15,5 +15,13 @@ public class Dealer implements Actor {
         this.hand.add(deck.getCards().get(0));
         System.out.println(deck.getCards().get(0));
         deck.getCards().remove(0);
+    } // SHOULDN'T THIS LOGIC BE IN THE ACTOR INTERFACE SINCE IT'S SOMETHING BOTH THE DEALER AND PLAYER SHARE AND LOOKS EXACTLY THE SAME?
+
+    public List<Card> getHand() {
+        return hand;
+    }
+
+    public void setHand(List<Card> hand) {
+        this.hand = hand;
     }
 }
